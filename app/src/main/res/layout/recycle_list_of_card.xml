@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtCardName"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Nombre carta"
+        app:layout_constraintStart_toEndOf="@+id/imgCardMin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCardMin"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtCardAttack"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Ataque"
+        app:layout_constraintStart_toEndOf="@+id/imgCardMin"
+        app:layout_constraintTop_toBottomOf="@+id/txtCardName" />
+
+    <TextView
+        android:id="@+id/txtCardLevel"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Nivel"
+        app:layout_constraintStart_toEndOf="@+id/txtCardAttack"
+        app:layout_constraintTop_toBottomOf="@+id/txtCardName" />
+
+    <TextView
+        android:id="@+id/txtCardDefends"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Defensa"
+        app:layout_constraintStart_toEndOf="@+id/imgCardMin"
+        app:layout_constraintTop_toBottomOf="@+id/txtCardAttack" />
+
+    <TextView
+        android:id="@+id/txtCardRaza"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Raza"
+        app:layout_constraintStart_toEndOf="@+id/txtCardDefends"
+        app:layout_constraintTop_toBottomOf="@+id/txtCardLevel" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="230dp" />
+
+    <Button
+        android:id="@+id/bRecyclerVer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ver carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
